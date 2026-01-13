@@ -100,18 +100,44 @@ button {
     align-items: center;
     justify-content: space-between;
 
-    transition: all 0.25s ease;
+    transition: 
+        transform 0.12s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 button i {
     font-size: 1.3rem;
 }
 
+/* Hover */
 button:hover {
     background: #1d1d2e;
     border-color: #4c4cff;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(76, 76, 255, 0.25);
+}
+
+/* Clique (animação premium) */
+button:active {
+    transform: scale(0.96);
+    background: #22223a;
+    border-color: #6a6aff;
+    animation: clickPulse 0.35s ease;
+}
+
+/* Animação de pulse no clique */
+@keyframes clickPulse {
+    0% {
+        box-shadow: 0 0 0 rgba(76, 76, 255, 0);
+    }
+    50% {
+        box-shadow: 0 0 18px rgba(76, 76, 255, 0.45);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(76, 76, 255, 0);
+    }
 }
 
 /* Footer */
