@@ -1,0 +1,134 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0f0f14, #08080c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e5e5;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 25px;
+}
+
+/* Área do avatar */
+.avatar-area {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Wrapper circular (não corta o gif) */
+.avatar-wrapper {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #1d1d2e, #0b0b12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GIF livre */
+.avatar-wrapper img {
+    width: 165px;
+    height: auto;
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* Texto */
+header h1 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+header p {
+    font-size: 0.95rem;
+    color: #b5b5c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+header p img {
+    width: 18px;
+}
+
+/* Links */
+.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 14px 18px;
+    background: #14141f;
+    border: 1px solid #2a2a3d;
+    border-radius: 12px;
+    color: #eaeaff;
+    font-size: 1rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all 0.25s ease;
+}
+
+button i {
+    font-size: 1.3rem;
+}
+
+button:hover {
+    background: #1d1d2e;
+    border-color: #4c4cff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 76, 255, 0.25);
+}
+
+/* Footer */
+footer {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-footer {
+    color: #b5b5c5;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.btn-footer:hover {
+    color: #ffffff;
+    transform: scale(1.15);
+}
